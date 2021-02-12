@@ -3,27 +3,28 @@
 {{ table('variable', {
     'Key model output': [
         'yield',
+        'biom',
+        'cnyield',
         'pirnreq',
-        'soilmoist'
+        'aet',
+        'soilmoist1m'
     ],
     'Key diagnostic variables': [
-        'aet',
-        'initr',
         'plantday',
+        'plantyear',
         'anthday',
-        'matyday'
+        'matyday',
+        'harvyear'
     ],
     'Additional output variables (optional)': [
-        'biom',
-        'sco2',
-        'sn2o',
-        'tnup',
-        'tnin',
-        'tnloss',
-        'sumt',
-        'gsrsds',
-        'gsprcp',
-        'leach'
+        'tnrup',
+        'tnrin',
+        'tnrloss',
+        'n2oemis',
+        'n2emis',
+        'nleach',
+        'tcemis',
+        'ch4emis'
     ]
 }) }}
 
@@ -31,7 +32,7 @@
 
 {{ table('crop', {
     'Major crops': [
-        'whe', 'mai', 'soy', 'ric'
+        'wwh', 'swh', 'mai', 'soy', 'ri1', 'ri2'
     ],
     'Other crops': None
 }) }}

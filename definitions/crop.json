@@ -1,7 +1,11 @@
 [
   {
-    "specifier": "whe",
-    "title": "Wheat"
+    "specifier": "wwh",
+    "title": "Winter wheat"
+  },
+  {
+    "specifier": "swh",
+    "title": "Spring wheat"
   },
   {
     "specifier": "mai",
@@ -9,11 +13,15 @@
   },
   {
     "specifier": "soy",
-    "title": "Soy"
+    "title": "Soybean"
   },
   {
-    "specifier": "ric",
-    "title": "Rice"
+    "specifier": "ri1",
+    "title": "Rice (first growing period)"
+  },
+  {
+    "specifier": "ri2",
+    "title": "Rice (second growing period)"
   },
   {
     "specifier": "bar",
@@ -21,7 +29,7 @@
   },
   {
     "specifier": "ben",
-    "title": "Bean"
+    "title": "Beans"
   },
   {
     "specifier": "cas",
@@ -49,7 +57,7 @@
   },
   {
     "specifier": "nut",
-    "title": "Groundnuts"
+    "title": "Groundnut"
   },
   {
     "specifier": "pea",
@@ -80,11 +88,15 @@
     "title": "Sorghum"
   },
   {
-    "specifier": "sug",
-    "title": "Sugarcane"
+    "specifier": "sgc",
+    "title": "Sugar cane"
   },
   {
     "specifier": "sun",
     "title": "Sunflower"
+  },
+  {
+    "specifier": "bea",
+    "title": "Beans"
   }
 ]
