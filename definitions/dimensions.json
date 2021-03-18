@@ -86,5 +86,12 @@
     "standard_name": "log10_weight_bins",
     "long_name": "log10 Weight Bins",
     "units": "g"
+  },
+  {
+    "specifier": "tl",
+    "axis": "Z",
+    "standard_name": "trophic_level_bins",
+    "long_name": "Trophic Level Bins",
+    "units": "-"
   }
 ]

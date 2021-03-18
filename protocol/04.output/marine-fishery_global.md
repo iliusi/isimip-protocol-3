@@ -1,7 +1,7 @@
 ### Output variables
 
 {{ table('variable', {
-    'Mandatory output from global and regional models (provide as many as possible). All biomasses are in wet weight, not g C.': [
+    'Mandatory output (provide as many as possible). All biomasses are in wet weight, not g C.': [
         'tcb',
         'tcblog10',
         'tpb',
@@ -11,7 +11,7 @@
         'tpc',
         'tdc'
     ],
-    'Optional output from global and regional models. All biomasses are in wet weight, not g C.': [
+    'Size-based optional output. All biomasses are in wet weight, not g C.': [
         'bp30cm',
         'bp30to90cm',
         'bp90cm',
@@ -24,5 +24,11 @@
         'cd30cm',
         'cd30to90cm',
         'cd90cm'
+    ],
+    'Trophic level based for models that can\'t provide sized-based output. All biomasses are in wet weight, not g C.': [
+        'tcbtl',
+        'tcb35tl',
+        'tcb35to37tl',
+        'tcb37tl'
     ]
 }) }}

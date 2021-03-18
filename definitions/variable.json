@@ -3507,6 +3507,60 @@
     "units": "g m-2"
   },
   {
+    "comment": "Biomass at each range of 0.1 trophic levels (or higher depending on the model resolution) for models that can't provide size-based outputs. Indicate the ranges in a 'comment' attribute of the 'tl' dimension",
+    "dimensions": [
+      "time",
+      "tl",
+      "lat",
+      "lon"
+    ],
+    "frequency": "monthly",
+    "long_name": "Total Consumer Biomass Density in Trophic Level Bins",
+    "resolution": "0.5° grid",
+    "sectors": [
+      "marine-fishery_global",
+      "marine-fishery_regional"
+    ],
+    "specifier": "tcbtl",
+    "units": "g m-2"
+  },
+  {
+    "comment": "Include when trophic level is <3.5",
+    "frequency": "monthly",
+    "long_name": "Total Consumer Biomass Density in Trophic Levels <3.5",
+    "resolution": "0.5° grid",
+    "sectors": [
+      "marine-fishery_global",
+      "marine-fishery_regional"
+    ],
+    "specifier": "tcb35tl",
+    "units": "g m-2"
+  },
+  {
+    "comment": "Include when trophic level is >=3.5 and <3.7",
+    "frequency": "monthly",
+    "long_name": "Total Consumer Biomass Density in Trophic Levels >=3.5 and <3.7",
+    "resolution": "0.5° grid",
+    "sectors": [
+      "marine-fishery_global",
+      "marine-fishery_regional"
+    ],
+    "specifier": "tcb35to37tl",
+    "units": "g m-2"
+  },
+  {
+    "comment": "Include when trophic level is >=3.7",
+    "frequency": "monthly",
+    "long_name": "Total Consumer Biomass Density in Trophic Levels >=3.7",
+    "resolution": "0.5° grid",
+    "sectors": [
+      "marine-fishery_global",
+      "marine-fishery_regional"
+    ],
+    "specifier": "tcb37tl",
+    "units": "g m-2"
+  },
+  {
     "comment": "For ERF models, this occurs when temperature is below threshold (e.g., minimum mortality temperature (MMT)). Report 0 if temperature above threshold. Can have gender, age, etc. dimensions; see below.",
     "dimensions": [
       "time",
