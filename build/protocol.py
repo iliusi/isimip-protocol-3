@@ -6,6 +6,7 @@ from collections import OrderedDict
 from jinja2 import Environment, FileSystemLoader, Template
 from markdown import markdown
 from markdown.extensions.toc import TocExtension
+
 from utils import (filter_row, filter_rows, get_commit_date, get_commit_hash,
                    read_definitions)
 
@@ -58,10 +59,6 @@ def main():
 
                 # step 3: convert markdown to html
                 html = markdown(md, extensions=['fenced_code', 'attr_list', 'tables', TocExtension(toc_depth='2-3')])
-
-                # step 3a: add .table class and dark header to custom tables
-                html = html.replace('<table', '<table class="table table-bordered w-auto"')
-                html = html.replace('<thead', '<thead class="thead-dark"')
 
                 # step 4: replace shortcodes
                 html = html.replace('[mandatory]', '<span class="badge badge-success">mandatory</span>')

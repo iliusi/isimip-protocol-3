@@ -3507,24 +3507,6 @@
     "units": "g m-2"
   },
   {
-    "comment": "Biomass at each range of 0.1 trophic levels (or higher depending on the model resolution) for models that can't provide size-based outputs. Indicate the ranges in a 'comment' attribute of the 'tl' dimension",
-    "dimensions": [
-      "time",
-      "tl",
-      "lat",
-      "lon"
-    ],
-    "frequency": "monthly",
-    "long_name": "Total Consumer Biomass Density in Trophic Level Bins",
-    "resolution": "0.5° grid",
-    "sectors": [
-      "marine-fishery_global",
-      "marine-fishery_regional"
-    ],
-    "specifier": "tcbtl",
-    "units": "g m-2"
-  },
-  {
     "comment": "Include when trophic level is <3.5",
     "frequency": "monthly",
     "long_name": "Total Consumer Biomass Density in Trophic Levels <3.5",
