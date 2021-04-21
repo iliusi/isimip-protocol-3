@@ -57,7 +57,11 @@ def main():
                                      table=Table(simulation_round, sector, Counter()))
 
                 # step 3: convert markdown to html
-                html = markdown(md, extensions=['fenced_code', 'attr_list', TocExtension(toc_depth='2-3')])
+                html = markdown(md, extensions=['fenced_code', 'attr_list', 'tables', TocExtension(toc_depth='2-3')])
+
+                # step 3a: add .table class and dark header to custom tables
+                html = html.replace('<table', '<table class="table table-bordered w-auto"')
+                html = html.replace('<thead', '<thead class="thead-dark"')
 
                 # step 4: replace shortcodes
                 html = html.replace('[mandatory]', '<span class="badge badge-success">mandatory</span>')
