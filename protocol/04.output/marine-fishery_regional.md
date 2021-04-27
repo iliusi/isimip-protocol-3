@@ -1,3 +1,5 @@
+#### Trophic level to size conversion
+
 Models that produce output in trophic levels instead of a size-based spectrum convert the data according to Ken H. Anderson, *Fish Ecology, Evolution, and Exploitation: A New Theoretical Synthesis*, ISBN: 9780691176550 as per the following assignment:
 
 <table id="tbl:trophic-levels" class="tablenos table table-bordered w-auto">
@@ -62,7 +64,7 @@ Models that produce output in trophic levels instead of a size-based spectrum co
         'cd30to90cm',
         'cd90cm'
     ],
-    'Trophic level based for models that can\'t provide sized-based output. All biomasses are in wet weight, not g C.': [
+    'Trophic level based output for models that can\'t provide sized-based output. All biomasses are in wet weight, not g C.': [
         'tcb35tl',
         'tcb35to37tl',
         'tcb37tl'
